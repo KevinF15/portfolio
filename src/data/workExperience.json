@@ -1,0 +1,16 @@
+[
+  {
+    "company": "Boom Solutions",
+    "jobTitle": "Desarrollador frontend • Diseñador UI/UX",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "duration": "Mar. 2023 - Actualidad",
+    "technologies": ["Astro", "React", "Typescript", "TailwindCSS"]
+  },
+  {
+    "company": "Simancas Technology",
+    "jobTitle": "Diseñador gráfico • Diseñador UI/UX",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "duration": "Jun. 2020 - Dic. 2020",
+    "technologies": ["Photoshop", "Illustrator"]
+  }
+]

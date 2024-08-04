@@ -2,8 +2,13 @@
 import Layout from '@/layouts/Layout.astro';
 
 import Intro from '@/sections/intro/Intro.astro';
+import WorkExperience from '@/sections/experience/WorkExperience.astro';
 ---
 
-<Layout title="Kevin Falcón - Frontend developer">
-	<Intro />
+<Layout title='Kevin Falcón - Frontend developer'>
+  <img src='/gradient-1.svg' class='absolute top-0 left-0 -z-10' />
+  <Intro />
+
+  <img src='/gradient-2.svg' class='absolute top-12 left-0 w-full -z-10' />
+  <WorkExperience />
 </Layout>

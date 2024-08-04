@@ -1,0 +1,64 @@
+---
+import workData from '@/data/workExperience.json';
+
+import AstroIcon from '@/assets/icons/AstroWhite.astro';
+import ReactIcon from '@/assets/icons/React.astro';
+import TypescriptIcon from '@/assets/icons/Typescript.astro';
+import TailwindIcon from '@/assets/icons/Tailwind.astro';
+import PhotoshopIcon from '@/assets/icons/Photoshop.astro';
+import IllustratorIcon from '@/assets/icons/Illustrator.astro';
+
+import Card from '@/components/Card.astro';
+
+const devIcons = {
+  Astro: AstroIcon,
+  React: ReactIcon,
+  Typescript: TypescriptIcon,
+  TailwindCSS: TailwindIcon,
+  Photoshop: PhotoshopIcon,
+  Illustrator: IllustratorIcon,
+};
+---
+
+<div class='flex flex-col gap-8 my-12 lg:my-24 items-center'>
+  <h2 class='text-3xl font-extrabold'>Experiencia</h2>
+
+  {
+    workData.map((item) => (
+      <div class='flex gap-x-4 w-full max-w-4xl'>
+        {/* <!-- Timeline --> */}
+        <div class='hidden lg:block relative last:after:hidden after:absolute after:top-14 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-light-gray pt-6'>
+          <div class='relative z-10 size-7 flex justify-center items-center'>
+            <div class='size-2.5 rounded-full bg-light-gray' />
+          </div>
+        </div>
+
+        {/* <!-- Content --> */}
+        <Card>
+          <div class='space-y-4'>
+            <div>
+              <span class='text-sm text-gray-300'>{item.duration}</span>
+              <h1 class='text-2xl font-bold'>{item.company}</h1>
+              <p class='text-light-blue font-semibold'>{item.jobTitle}</p>
+            </div>
+            <p>{item.description}</p>
+
+            <div class='flex gap-4 items-center'>
+              <span class='font-bold'>Stack:</span>
+              {item.technologies.map((tech) => {
+                const IconComponent = devIcons[tech];
+
+                return (
+                  <div class='relative inline-flex gap-2 items-center justify-center px-2.5 py-1 overflow-hidden text-sm text-white rounded-md shadow-2xl border border-white transition-all duration-300 ease-out hover:bg-white/10 hover:cursor-default'>
+                    {IconComponent && <IconComponent class='size-4' />}
+                    <span class='relative'>{tech}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </Card>
+      </div>
+    ))
+  }
+</div>
