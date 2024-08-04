@@ -1,0 +1,16 @@
+---
+interface Props {
+  src: string;
+  alt?: string;
+}
+
+const { src, alt = 'Avatar' } = Astro.props;
+---
+
+<div>
+  <img
+    class='transition-all duration-150 ease-in-out size-20 rounded-full outline outline-1 outline-offset-2 hover:outline-offset-4 outline-white'
+    src={src}
+    alt={alt}
+  />
+</div>
