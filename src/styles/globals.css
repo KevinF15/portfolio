@@ -4,7 +4,22 @@
 
 @layer base {
   :root {
-    --background: #070F12;
+    --background: #070f12;
+
+    /* blue */
+    --primary-blue: #0198b1;
+    --dark-blue: #015f73;
+    --light-blue: #57c7d3;
+
+    /* red */
+    --primary-red: #d6192b;
+    --dark-red: #8f0d1a;
+    --light-red: #f26a76;
+
+    /* gray */
+    --primary-gray: #172e36;
+    --dark-gray: #0d1a20;
+    --light-gray: #4a6976;
   }
 }
 
@@ -12,4 +27,42 @@ html {
   background-color: var(--background);
   color: #FFF;
   font-family: system-ui, sans-serif;
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+  @apply w-full rounded-lg;
+}
+
+.card .card-content {
+  z-index: 5;
+  position: relative;
+  @apply px-5 py-6;
+}
+
+.card:hover::before {
+  opacity: 0.45;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  background: radial-gradient(var(--primary-blue), transparent, transparent);
+  width: 650px;
+  height: 650px;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.5s, top 0s, left 0s;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: rgba(23, 46, 54, 0.45);
+  backdrop-filter: blur(5px);
+  @apply rounded-md;
 }
