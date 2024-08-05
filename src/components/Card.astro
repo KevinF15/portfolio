@@ -1,4 +1,10 @@
-<div class='card'>
+---
+interface Props {
+  class?: string;
+}
+---
+
+<div class={`card ${Astro.props.class}`}>
   <div class='card-content'>
     <slot />
   </div>
