@@ -32,7 +32,8 @@ html {
 .card {
   overflow: hidden;
   position: relative;
-  @apply w-full rounded-lg;
+  @apply w-full rounded-lg border border-light-gray;
+  @apply transition-all duration-300 ease-in-out;
 }
 
 .card .card-content {

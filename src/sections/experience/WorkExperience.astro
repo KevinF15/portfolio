@@ -25,16 +25,16 @@ const devIcons = {
 
   {
     workData.map((item) => (
-      <div class='flex gap-x-4 w-full max-w-4xl'>
+      <div class='flex gap-x-4 w-full max-w-4xl group/experience'>
         {/* <!-- Timeline --> */}
         <div class='hidden lg:block relative last:after:hidden after:absolute after:top-14 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-light-gray pt-6'>
           <div class='relative z-10 size-7 flex justify-center items-center'>
-            <div class='size-2.5 rounded-full bg-light-gray' />
+            <div class='size-2.5 rounded-full bg-light-gray group-hover/experience:bg-light-blue @apply transition-all duration-300 ease-in-out;' />
           </div>
         </div>
 
         {/* <!-- Content --> */}
-        <Card>
+        <Card class='transition-all duration-300 ease-in-out hover:scale-[1.02] hover:border-light-gray/25 hover:m-0.5'>
           <div class='space-y-4'>
             <div>
               <span class='text-sm text-gray-300'>{item.duration}</span>
