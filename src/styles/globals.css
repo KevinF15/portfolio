@@ -36,6 +36,10 @@ html {
   @apply transition-all duration-300 ease-in-out;
 }
 
+.card:hover {
+  @apply border-light-gray/10;
+}
+
 .card .card-content {
   z-index: 5;
   position: relative;

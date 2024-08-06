@@ -1,0 +1,18 @@
+[
+  {
+    "tag": "Sitio web",
+    "title": "Boom Solutions Venezuela",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "url": "https://boomsolutionsve.com/",
+    "img": "/website-boomve.webp",
+    "stack": ["Astro", "React", "TailwindCSS"]
+  },
+  {
+    "tag": "Sitio web",
+    "title": "Boom Solutions Puerto Rico",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "url": "https://boomsolutionspr.com/",
+    "img": "/website-boompr.webp",
+    "stack": ["Astro", "React", "TailwindCSS"]
+  }
+]

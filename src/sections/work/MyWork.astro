@@ -1,0 +1,67 @@
+---
+import Card from '@/components/Card.astro';
+import portfolioData from '@/data/portfolio.json';
+
+import AstroIcon from '@/assets/icons/AstroWhite.astro';
+import ReactIcon from '@/assets/icons/React.astro';
+import TypescriptIcon from '@/assets/icons/Typescript.astro';
+import TailwindIcon from '@/assets/icons/Tailwind.astro';
+import PhotoshopIcon from '@/assets/icons/Photoshop.astro';
+import IllustratorIcon from '@/assets/icons/Illustrator.astro';
+
+import { Link } from 'lucide-astro';
+
+const devIcons = {
+  Astro: AstroIcon,
+  React: ReactIcon,
+  Typescript: TypescriptIcon,
+  TailwindCSS: TailwindIcon,
+  Photoshop: PhotoshopIcon,
+  Illustrator: IllustratorIcon,
+};
+---
+
+<div class='flex flex-col gap-8 my-12 lg:my-24 items-center'>
+  <h2 class='text-3xl font-extrabold'>Mis trabajos</h2>
+
+  {
+    portfolioData.map((project) => (
+      <div class='group flex flex-col md:flex-row items-center gap-6 max-w-4xl'>
+        <Card class='max-w-96'>
+          <div class='w-80 h-40'>
+            <img
+              class='w-full rounded-lg absolute mt-2 ms-2 group-hover:m-0 transition-all duration-300 ease-in-out'
+              src={project.img}
+              alt={project.title}
+            />
+          </div>
+        </Card>
+
+        <div class='space-y-4'>
+          <div>
+            <span class='text-sm text-light-blue'>{project.tag}</span>
+            <h1 class='text-2xl font-bold'>{project.title}</h1>
+          </div>
+          <p>{project.description}</p>
+
+          <div class='flex gap-3 items-center'>
+            {project.stack.map((tech) => {
+              const IconComponent = devIcons[tech];
+
+              return <IconComponent class='size-6' />;
+            })}
+          </div>
+
+          <a
+            class='relative inline-flex gap-2 items-center justify-center px-3 py-1.5 overflow-hidden text-white rounded-md shadow-2xl border border-white transition-all duration-300 ease-out hover:bg-white hover:font-semibold hover:text-primary-gray group/button'
+            href={project.url}
+            target='_blank'
+          >
+            <Link class='size-4 group-hover/button:rotate-45 transition-all duration-300 ease-out' />
+            Visitar
+          </a>
+        </div>
+      </div>
+    ))
+  }
+</div>
