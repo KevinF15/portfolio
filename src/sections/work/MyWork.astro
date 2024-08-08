@@ -9,18 +9,15 @@ import portfolioData from '@/data/portfolio.json';
 ---
 
 <Section title='Mis trabajos'>
-  {
-    portfolioData.map((project) => (
-      <div class='group flex flex-col md:flex-row items-center gap-6 max-w-4xl'>
-        <Card class='max-w-96'>
-          <div class='w-80 h-40'>
-            <img
-              class='w-full rounded-lg absolute mt-2 ms-2 group-hover:m-0 transition-all duration-300 ease-in-out'
-              src={project.img}
-              alt={project.title}
-            />
-          </div>
-        </Card>
+  <div class='grid gap-10'>
+
+    {portfolioData.map((project) => (
+      <article class='grid gap-4 sm:gap-7 md:grid-cols-2 group max-w-4xl'>
+        <a href={project.url} target='_blank' rel='noreferrer'>
+          <Card class='relative h-60'>
+            <img src={project.img} class="w-full absolute mt-2 ms-2 rounded-lg object-cover object-left-top h-56 group-hover:m-0 transition-all duration-300 ease-in-out">
+          </Card>
+        </a>
 
         <div class='space-y-4'>
           <div>
@@ -36,7 +33,7 @@ import portfolioData from '@/data/portfolio.json';
           </div>
 
           <a
-            class='relative inline-flex gap-2 items-center justify-center px-3 py-1.5 overflow-hidden text-white rounded-md shadow-2xl border border-white transition-all duration-300 ease-out hover:bg-white hover:font-semibold hover:text-primary-gray group/button'
+            class='relative inline-flex gap-2 items-center justify-center px-3 py-1.5 overflow-hidden text-white rounded-md shadow-2xl border border-white transition-all duration-300 ease-out hover:bg-white font-semibold hover:text-primary-gray group/button'
             href={project.url}
             target='_blank'
           >
@@ -45,6 +42,8 @@ import portfolioData from '@/data/portfolio.json';
           </a>
         </div>
       </div>
-    ))
-  }
+      </article>
+    ))}
+
+  </div>
 </Section>
