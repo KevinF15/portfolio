@@ -1,4 +1,5 @@
 ---
+import Footer from '@/sections/footer/Footer.astro';
 import '@/styles/globals.css';
 
 interface Props {
@@ -21,6 +22,7 @@ const { title } = Astro.props;
   <body>
     <main class='max-w-7xl mx-auto sm:px-8 mt-16 sm:mt-24'>
       <slot />
+      <Footer />
     </main>
 
     <script>

@@ -29,6 +29,10 @@ html {
   font-family: system-ui, sans-serif;
 }
 
+/*---------------------
+    Glowing cards 
+---------------------*/
+
 .card {
   overflow: hidden;
   position: relative;
@@ -70,4 +74,14 @@ html {
   background: rgba(23, 46, 54, 0.45);
   backdrop-filter: blur(5px);
   @apply rounded-md;
+}
+
+/*---------------------
+    Footer border 
+---------------------*/
+
+.gradient-border {
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, var(--primary-red), transparent);
+  border-image-slice: 1;
 }
