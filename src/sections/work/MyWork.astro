@@ -10,40 +10,42 @@ import portfolioData from '@/data/portfolio.json';
 
 <Section title='Mis trabajos'>
   <div class='grid gap-10'>
-
-    {portfolioData.map((project) => (
-      <article class='grid gap-4 sm:gap-7 md:grid-cols-2 group max-w-4xl'>
-        <a href={project.url} target='_blank' rel='noreferrer'>
-          <Card class='relative h-60'>
-            <img src={project.img} class="w-full absolute mt-2 ms-2 rounded-lg object-cover object-left-top h-56 group-hover:m-0 transition-all duration-300 ease-in-out">
-          </Card>
-        </a>
-
-        <div class='space-y-4'>
-          <div>
-            <span class='text-sm text-light-blue'>{project.tag}</span>
-            <h1 class='text-2xl font-bold'>{project.title}</h1>
-          </div>
-          <p>{project.description}</p>
-
-          <div class='flex gap-3 items-center'>
-            {project.stack.map((tech) => (
-              <TechIcon tech={tech} className='size-6' />
-            ))}
-          </div>
-
-          <a
-            class='relative inline-flex gap-2 items-center justify-center px-3 py-1.5 overflow-hidden text-white rounded-md shadow-2xl border border-white transition-all duration-300 ease-out hover:bg-white font-semibold hover:text-primary-gray group/button'
-            href={project.url}
-            target='_blank'
-          >
-            <Link class='size-4 group-hover/button:rotate-45 transition-all duration-300 ease-out' />
-            Visitar
+    {
+      portfolioData.map((project) => (
+        <article class='grid gap-4 sm:gap-7 md:grid-cols-2 group max-w-4xl'>
+          <a href={project.url} target='_blank' rel='noreferrer'>
+            <Card class='relative h-60'>
+              <img
+                src={project.img}
+                class='w-full absolute mt-2 ms-2 rounded-lg object-cover object-left-top h-56 group-hover:m-0 transition-all duration-300 ease-in-out'
+              />
+            </Card>
           </a>
-        </div>
-      </div>
-      </article>
-    ))}
 
+          <div class='space-y-4'>
+            <div>
+              <span class='text-sm text-light-blue'>{project.tag}</span>
+              <h1 class='text-2xl font-bold'>{project.title}</h1>
+            </div>
+            <p>{project.description}</p>
+
+            <div class='flex gap-3 items-center'>
+              {project.stack.map((tech) => (
+                <TechIcon tech={tech} className='size-6' />
+              ))}
+            </div>
+
+            <a
+              class='relative inline-flex gap-2 items-center justify-center px-3 py-1.5 overflow-hidden text-white rounded-md shadow-2xl border border-white transition-all duration-300 ease-out hover:bg-white font-semibold hover:text-primary-gray group/button'
+              href={project.url}
+              target='_blank'
+            >
+              <Link class='size-4 group-hover/button:rotate-45 transition-all duration-300 ease-out' />
+              Visitar
+            </a>
+          </div>
+        </article>
+      ))
+    }
   </div>
 </Section>
