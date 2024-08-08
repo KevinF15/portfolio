@@ -5,14 +5,13 @@ import TypescriptIcon from '@/assets/icons/Typescript.astro';
 import TailwindIcon from '@/assets/icons/Tailwind.astro';
 import PhotoshopIcon from '@/assets/icons/Photoshop.astro';
 import IllustratorIcon from '@/assets/icons/Illustrator.astro';
-
 import HMTLIcon from '@/assets/icons/HTML.astro';
 import CSSIcon from '@/assets/icons/CSS.astro';
 import JSIcon from '@/assets/icons/JS.astro';
 import PHPIcon from '@/assets/icons/PHP.astro';
 import MySQLIcon from '@/assets/icons/MySQL.astro';
 import GitIcon from '@/assets/icons/Git.astro';
-
+import Shadcn from '@/assets/icons/Shadcn.astro';
 import FigmaIcon from '@/assets/icons/Figma.astro';
 
 type TechName =
@@ -23,6 +22,7 @@ type TechName =
   | 'React'
   | 'Typescript'
   | 'TailwindCSS'
+  | 'Shadcn'
   | 'PHP'
   | 'MySQL'
   | 'Git'
@@ -43,6 +43,7 @@ const devIcons: Record<TechName, any> = {
   React: ReactIcon,
   Typescript: TypescriptIcon,
   TailwindCSS: TailwindIcon,
+  Shadcn: Shadcn,
   PHP: PHPIcon,
   MySQL: MySQLIcon,
   Git: GitIcon,
