@@ -1,0 +1,36 @@
+---
+import AstroIcon from '@/assets/icons/AstroWhite.astro';
+import ReactIcon from '@/assets/icons/React.astro';
+import TypescriptIcon from '@/assets/icons/Typescript.astro';
+import TailwindIcon from '@/assets/icons/Tailwind.astro';
+import PhotoshopIcon from '@/assets/icons/Photoshop.astro';
+import IllustratorIcon from '@/assets/icons/Illustrator.astro';
+
+type TechName =
+  | 'Astro'
+  | 'React'
+  | 'Typescript'
+  | 'TailwindCSS'
+  | 'Photoshop'
+  | 'Illustrator';
+
+interface Props {
+  tech: TechName | string;
+  className?: string;
+}
+
+const devIcons: Record<TechName, any> = {
+  Astro: AstroIcon,
+  React: ReactIcon,
+  Typescript: TypescriptIcon,
+  TailwindCSS: TailwindIcon,
+  Photoshop: PhotoshopIcon,
+  Illustrator: IllustratorIcon,
+};
+
+const { tech, className } = Astro.props;
+
+const IconComponent = devIcons[tech as TechName];
+---
+
+{IconComponent && <IconComponent class={className} />}
