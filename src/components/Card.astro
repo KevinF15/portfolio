@@ -1,11 +1,14 @@
 ---
 interface Props {
   class?: string;
+  noPadding?: boolean;
 }
+
+const { noPadding = false } = Astro.props;
 ---
 
 <div class={`card ${Astro.props.class}`}>
-  <div class='card-content'>
+  <div class={`card-content ${noPadding ? 'no-padding' : ''}`}>
     <slot />
   </div>
 </div>

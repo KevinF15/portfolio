@@ -50,6 +50,10 @@ html {
   @apply px-5 py-6;
 }
 
+.card .card-content.no-padding {
+  @apply px-0 py-0;
+}
+
 .card:hover::before {
   opacity: 0.45;
 }
