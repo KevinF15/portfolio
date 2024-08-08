@@ -1,0 +1,72 @@
+---
+// Skills.astro
+import Section from '@/components/Section.astro';
+import GlowIcon from '@/sections/skills/components/GlowIcon.astro';
+
+const skills = [
+  {
+    name: 'HTML',
+    color: '#e34c26',
+  },
+  {
+    name: 'CSS',
+    color: '#1572b6',
+  },
+  {
+    name: 'JS',
+    color: '#f7e018',
+  },
+  {
+    name: 'React',
+    color: '#61dafb',
+  },
+  {
+    name: 'Typescript',
+    color: '#3178c6',
+  },
+  {
+    name: 'Astro',
+    color: '#e0e0e0',
+  },
+  {
+    name: 'TailwindCSS',
+    color: '#38bdf8',
+  },
+  {
+    name: 'PHP',
+    color: '#787cb5',
+  },
+  {
+    name: 'MySQL',
+    color: '#00618A',
+  },
+  {
+    name: 'Git',
+    color: '#f05032',
+  },
+  {
+    name: 'Photoshop',
+    color: '#31A8FF',
+  },
+  {
+    name: 'Illustrator',
+    color: '#ff9a00',
+  },
+  {
+    name: 'Figma',
+    color: '#A259FF',
+  },
+];
+---
+
+<Section title='Habilidades'>
+  <div class='flex flex-wrap gap-4 p-4 justify-center max-w-2xl'>
+    {
+      skills.map((skill) => (
+        <div class='flex-shrink-0 p-4 rounded-md text-white'>
+          <GlowIcon tech={skill.name} color={skill.color} />
+        </div>
+      ))
+    }
+  </div>
+</Section>
