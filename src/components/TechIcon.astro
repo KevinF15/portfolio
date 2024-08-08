@@ -6,13 +6,29 @@ import TailwindIcon from '@/assets/icons/Tailwind.astro';
 import PhotoshopIcon from '@/assets/icons/Photoshop.astro';
 import IllustratorIcon from '@/assets/icons/Illustrator.astro';
 
+import HMTLIcon from '@/assets/icons/HTML.astro';
+import CSSIcon from '@/assets/icons/CSS.astro';
+import JSIcon from '@/assets/icons/JS.astro';
+import PHPIcon from '@/assets/icons/PHP.astro';
+import MySQLIcon from '@/assets/icons/MySQL.astro';
+import GitIcon from '@/assets/icons/Git.astro';
+
+import FigmaIcon from '@/assets/icons/Figma.astro';
+
 type TechName =
   | 'Astro'
+  | 'HTML'
+  | 'CSS'
+  | 'JS'
   | 'React'
   | 'Typescript'
   | 'TailwindCSS'
+  | 'PHP'
+  | 'MySQL'
+  | 'Git'
   | 'Photoshop'
-  | 'Illustrator';
+  | 'Illustrator'
+  | 'Figma';
 
 interface Props {
   tech: TechName | string;
@@ -21,11 +37,18 @@ interface Props {
 
 const devIcons: Record<TechName, any> = {
   Astro: AstroIcon,
+  HTML: HMTLIcon,
+  CSS: CSSIcon,
+  JS: JSIcon,
   React: ReactIcon,
   Typescript: TypescriptIcon,
   TailwindCSS: TailwindIcon,
+  PHP: PHPIcon,
+  MySQL: MySQLIcon,
+  Git: GitIcon,
   Photoshop: PhotoshopIcon,
   Illustrator: IllustratorIcon,
+  Figma: FigmaIcon,
 };
 
 const { tech, className } = Astro.props;
