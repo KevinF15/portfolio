@@ -2,7 +2,7 @@
   {
     "tag": "Sitio web",
     "title": "Boom Solutions Venezuela",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Diseñado para presentar los servicios de internet de fibra óptica e inalámbrico. El enfoque principal es destacar la empresa y sus ofertas, facilitando la captación de nuevos clientes.",
     "url": "https://boomsolutionsve.com/",
     "img": "/website-boomve.webp",
     "stack": ["Astro", "React", "TailwindCSS"]
@@ -10,7 +10,7 @@
   {
     "tag": "Sitio web",
     "title": "Boom Solutions Puerto Rico",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Diseñado para presentar los servicios de internet inalámbrico y televisión satelital. El enfoque principal es destacar la empresa y sus ofertas, facilitando la captación de nuevos clientes.",
     "url": "https://boomsolutionspr.com/",
     "img": "/website-boompr.webp",
     "stack": ["Astro", "React", "TailwindCSS"]
