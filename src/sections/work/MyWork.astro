@@ -12,7 +12,7 @@ import portfolioData from '@/data/portfolio.json';
   <div class='grid gap-10'>
     {
       portfolioData.map((project) => (
-        <article class='grid gap-4 sm:gap-7 md:grid-cols-2 group max-w-4xl'>
+        <article class='grid gap-4 sm:gap-7 md:grid-cols-2 group max-w-4xl items-center'>
           <a href={project.url} target='_blank' rel='noreferrer'>
             <Card class='relative h-60'>
               <img
