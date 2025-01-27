@@ -1,5 +1,13 @@
 [
   {
+    "tag": "Aplicación web",
+    "title": "Portal clientes DataNet Vzla",
+    "description": "Desarrollado para consultar detalles del servicio, verificar deudas pendientes y realizar pagos de mensualidades de manera rápida y sencilla. El enfoque principal es ofrecer una experiencia intuitiva que facilite la gestión autónoma por parte del cliente.",
+    "url": "https://clientes.datanetvzla.com/",
+    "img": "/website-datanet-portal.webp",
+    "stack": ["React", "TailwindCSS", "Preline"]
+  },
+  {
     "tag": "Sitio web",
     "title": "Boom Solutions Venezuela",
     "description": "Diseñado para presentar los servicios de internet de fibra óptica e inalámbrico. El enfoque principal es destacar la empresa y sus ofertas, facilitando la captación de nuevos clientes.",

@@ -1,9 +1,16 @@
 [
   {
+    "company": "DataNet Vzla",
+    "jobTitle": "Desarrollador frontend",
+    "description": "Actualmente, me desempeño como desarrollador frontend, donde soy responsable de crear y mantener sitios/sistemas para garantizar su óptimo funcionamiento. Además, colaboro con el equipo backend en el desarrollo y mantenimiento de APIs y  manejo de bases de datos. Como parte de mis objetivos, me esfuerzo por crear código limpio y escalable, aplicando las mejores prácticas de programación para asegurar soluciones eficientes y sostenibles.",
+    "duration": "Sept. 2024 - Actualidad",
+    "technologies": ["Astro", "React", "Vue", "Typescript", "TailwindCSS", "Laravel", "MySQL"]
+  },
+  {
     "company": "Boom Solutions",
     "jobTitle": "Desarrollador frontend • Diseñador UI/UX",
-    "description": "Me especializo en crear sitios y aplicaciones con un enfoque en la funcionalidad y la estética. También soy responsable del diseño UI/UX, utilizando Figma para transformar conceptos en interfaces intuitivas y atractivas. Además, colaboro con el equipo de marketing para asegurar que cada proyecto se alinee con la estrategia de comunicación y branding de la empresa.",
-    "duration": "Mar. 2023 - Actualidad",
+    "description": "Me especialicé en crear sitios y aplicaciones con un enfoque en la funcionalidad y la estética. También fui responsable del diseño UI/UX, utilizando Figma para transformar conceptos en interfaces intuitivas y atractivas. Además, colaboré con el equipo de marketing para asegurar que cada proyecto se alineara con la estrategia de comunicación y branding de la empresa.",
+    "duration": "Mar. 2023 - Sept. 2024",
     "technologies": ["Astro", "React", "Typescript", "TailwindCSS"]
   },
   {
